@@ -27,7 +27,7 @@ class MyRobot(Robot):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.sensor_history = []
-        self.history_limit = 6
+        self.history_limit = 12
         self.repeat_threshold = 3
 
     def is_pattern(self, front, right, left):
